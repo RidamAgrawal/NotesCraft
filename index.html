@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NotesCraft</title>
+    <link rel="Stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="mainContainerforEdit">
+        <div class="edit-section">
+            <img src="./images/close.png" alt="close" data-key="close" height="30px" width="30px">
+            <div><textarea class="textarea edittitle"></textarea><button id="resetedittitle"><img src="./images/reset.png" height="30px" width="30px" data-key="resetedittitle"></button></div>
+            <div><textarea class="textarea editnote"></textarea><button id="reseteditnote"><img src="./images/reset.png" height="30px" width="30px" data-key="reseteditnote"></button></div>
+            <div><img class="add-bn" src="./images/saveedit.png" alt="add" data-key="save" height="30px" width="30px"></div>
+        </div>
+    </div>
+    <header class="heading">
+        <nav>
+            <h1 class="">NotesCraft</h1>
+            <ul class="list-none d-flex">
+                <li><a href="/" class="t-none"><img src="./images/home.png" height="30px" width="30px" data-key="resettitle"></a></li>
+                <li><a href="archive.html" class="t-none" target="_blank"><img src="./images/unarchive.png" height="30px" width="30px" data-key="resettitle"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="add-section">
+        <div><textarea class="textarea title" placeholder="Notes Title" data-key="title"></textarea><button id="resettitle"><img src="./images/reset.png" height="30px" width="30px" data-key="resettitle"></button></div>
+        <div><textarea class="textarea note" placeholder="craft the Notes..." data-key="note"></textarea><button id="resetnote"><img src="./images/reset.png" height="30px" width="30px" data-key="resetnote"></button></div>
+        <div><img class="add-btn" src="./images/addCircle.png" alt="add" data-key="add" height="30px" width="30px"></div>
+    </div>
+    <div class="error" style="margin: 20px auto;width: fit-content;">
+        <span>*title and note cannot be empty</span>
+    </div>
+    <div class="notesDisplay">
+        <div >Pinned</div>
+        <div class="showPinnedNotes"></div>
+        <div >Others</div>
+        <div class="showOtherNotes"></div>
+    </div>
+    <div class="heading hidden"><img id="undo-btn" src="./images/undo.png" alt="add" data-key="undo" height="30px" width="30px"></div>
+    <script type="module" src="index.js"></script>
+</body> 
+</html>
