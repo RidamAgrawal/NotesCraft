@@ -18,7 +18,7 @@ var helpers=document.querySelectorAll('.helpers');
     document.getElementById('reseteditnote').style.visibility='hidden';
 }
 
-let arr=JSON.parse(localStorage.getItem('Notes'))||[{title:'resume',note:'complete your resume asap',id:0,isPinned:true,isArchived:false},{title:'project',note:'complete your project hurry!!',id:1,isPinned:true,isArchived:false},{title:'resume',note:'complete your resume asap',id:2,isPinned:false,isArchived:false},{title:'project',note:'complete your project hurry!!',id:3,isPinned:false,isArchived:false}];
+let arr=JSON.parse(localStorage.getItem('Notes'))||[{title:'NotesCraft',note:'can save your notes here temporarily',id:0,isPinned:true,isArchived:false},{title:'may get previous notes',note:'Notes can be retirieved if your browser have saved Notes',id:1,isPinned:true,isArchived:false}];
 
 showNotes();
 function showNotes(){
